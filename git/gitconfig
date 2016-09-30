@@ -1,0 +1,30 @@
+[color]
+  status = auto
+  diff = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+[push]
+  default = upstream
+[core]
+	excludesfile = ~/.gitignore
+  autocrlf = input
+  editor = vim
+  quotepath = false
+[merge]
+  tool = vimdiff
+  ff = false
+[branch]
+  autosetuprebase = always
+[pull]
+  rebase = true
+[alias]
+  co  = checkout
+  br  = branch
+[http]
+  sslVerify = false
+[tig "bind"]
+  generic = g move-first-line
+  generic = G move-last-line
+  generic = ^F move-page-down
+  generic = ^B move-page-up

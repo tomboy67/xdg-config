@@ -1,0 +1,29 @@
+{
+	"segments": {
+		"right": [
+      {
+        "function": "powerline.segments.common.sys.cpu_load_percent"
+      },
+      {
+        "function": "powerline.segments.common.net.network_load"
+      },
+      {
+        "function": "powerline.segments.common.net.internal_ip"
+      },
+			{
+				"function": "powerline.segments.common.time.date"
+			},
+			{
+				"function": "powerline.segments.common.time.date",
+				"name": "time",
+				"args": {
+					"format": "%H:%M",
+					"istime": true
+				}
+			},
+			{
+				"function": "powerline.segments.common.net.hostname"
+			}
+		]
+	}
+}

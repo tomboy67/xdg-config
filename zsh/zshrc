@@ -1,0 +1,7 @@
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+
+for config in $XDG_CONFIG_HOME/zsh/*.zsh; do
+    source $config
+done

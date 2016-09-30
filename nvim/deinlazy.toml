@@ -1,0 +1,72 @@
+[[plugins]]
+repo = 'Shougo/unite.vim'
+depends = 'neomru.vim'
+hook_source = 'source ~/.config/nvim/rc/plugins_lazy/unite.rc.vim'
+
+[[plugins]]
+repo = 'sorah/unite-ghq'
+on_source = 'unite.vim'
+
+[[plugins]]
+repo = 'basyura/unite-rails'
+on_source = 'unite.vim'
+
+[[plugins]]
+repo = 'Shougo/neoyank.vim'
+on_event = 'TextYankPost'
+on_source = 'unite.vim'
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+on_event = ['BufRead']
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+[[plugins]]
+repo = 'elzr/vim-json'
+on_ft = 'json'
+
+[[plugins]]
+repo = 'rcmdnk/vim-markdown'
+on_ft = ['markdown', 'mkd']
+
+[[plugins]]
+repo = 'vim-ruby/vim-ruby'
+on_ft = 'ruby'
+
+[[plugins]]
+repo = 'tpope/vim-rails'
+on_ft = 'ruby'
+
+[[plugins]]
+repo = 'slim-template/vim-slim'
+on_ft = 'slim'
+on_hook = 'echo "test"'
+
+[[plugins]]
+repo = 'jelera/vim-javascript-syntax'
+on_ft = 'javascript'
+
+[[plugins]]
+repo = 'Shougo/neco-vim'
+on_ft = 'vim'
+
+[[plugins]]
+repo = 'Shougo/neco-syntax'
+on_source = ['neocomplete.vim', 'deoplete.nvim']
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+on_map = '<Plug>'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'scrooloose/nerdcommenter'
+on_map = '<Plug>NERDCommenterToggle'
