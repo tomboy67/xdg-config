@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'caskroom/cask'
+tap 'caskroom/fonts'
 tap 'tkengo/highway'
 tap 'neovim/neovim'
 
@@ -29,3 +30,4 @@ cask 'google-japanese-ime'
 cask 'appcleaner'
 cask 'iterm2'
 cask 'libreoffice'
+cask 'font-source-han-code-jp'
