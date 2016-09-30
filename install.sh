@@ -16,10 +16,3 @@ for file in ${TMUX_DOT_FILES[@]}
 do
     ln -sF $XDG_CONFIG_HOME/tmux/$file $HOME/.$file
 done
-
-GIT_DOT_FILES=( gitconfig gitignore )
-
-for file in ${GIT_DOT_FILES[@]}
-do
-    ln -sF $XDG_CONFIG_HOME/git/$file $HOME/.$file
-done

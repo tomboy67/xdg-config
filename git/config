@@ -7,9 +7,8 @@
 [push]
   default = upstream
 [core]
-	excludesfile = ~/.gitignore
   autocrlf = input
-  editor = vim
+  editor = nvim
   quotepath = false
 [merge]
   tool = vimdiff
