@@ -1,9 +1,9 @@
 #!/bin/bash
 
-ZSH_DOT_FILES=( zshrc )
-
 [ -d $XDG_CACHE_HOME/zsh ] || mkdir $XDG_CACHE_HOME/zsh
 [ -d $XDG_CACHE_HOME/zplug ] || mkdir $XDG_CACHE_HOME/zplug
+
+ZSH_DOT_FILES=( zshrc zshenv )
 
 for file in ${ZSH_DOT_FILES[@]}
 do
