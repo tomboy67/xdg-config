@@ -16,6 +16,8 @@ export PATH=$HOME/.pyenv/shims:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$PATH:$HOME/.local/bin
 
+[[ -d ~/.rbenv  ]] && eval "$(rbenv init -)"
+
 autoload colors
 colors
 
