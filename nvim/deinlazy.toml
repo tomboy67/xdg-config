@@ -24,6 +24,10 @@ repo = 'airblade/vim-gitgutter'
 on_event = ['BufRead']
 
 [[plugins]]
+repo = 'mattn/emmet-vim'
+on_ft = 'html'
+
+[[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
@@ -42,6 +46,10 @@ on_ft = 'ruby'
 [[plugins]]
 repo = 'tpope/vim-rails'
 on_ft = 'ruby'
+
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+on_ft = 'coffee'
 
 [[plugins]]
 repo = 'slim-template/vim-slim'
