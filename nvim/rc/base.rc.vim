@@ -8,3 +8,4 @@ set showcmd
 set showmode
 set notitle
 set clipboard+=unnamedplus
+set noswapfile

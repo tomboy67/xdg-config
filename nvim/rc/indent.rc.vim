@@ -6,6 +6,9 @@ set tabstop=2 shiftwidth=2 softtabstop=0
 if has("autocmd")
   filetype plugin indent on
 
+  autocmd BufNewFile,BufRead *.slim set filetype=slim
+  autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+
   autocmd FileType css        setlocal sw=2 sts=2 ts=2 et
   autocmd FileType eruby      setlocal sw=2 sts=2 ts=2 et
   autocmd FileType html       setlocal sw=2 sts=2 ts=2 et
@@ -21,6 +24,4 @@ if has("autocmd")
   autocmd FileType yaml       setlocal sw=2 sts=2 ts=2 et
   autocmd FileType zsh        setlocal sw=4 sts=4 ts=4 et
   autocmd FileType scala      setlocal sw=2 sts=2 ts=2 et
-
-  autocmd BufNewFile,BufRead *.slim set filetype=slim
 endif

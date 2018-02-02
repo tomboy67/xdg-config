@@ -12,11 +12,11 @@ bindkey -v
 export EDITOR=vim
 
 export PATH=$PATH:/sbin:/usr/local/bin
-export PATH=$HOME/.pyenv/shims:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$PATH:$HOME/.local/bin
 
 [[ -d ~/.rbenv  ]] && eval "$(rbenv init -)"
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 autoload colors
 colors
