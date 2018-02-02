@@ -28,3 +28,6 @@ repo = 'Shougo/deoplete.nvim'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'w0rp/ale'
