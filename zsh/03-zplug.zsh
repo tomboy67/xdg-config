@@ -1,4 +1,4 @@
-export ZPLUG_CACHE_FILE=$HOME/.cache/zplug/cache
+export ZPLUG_CACHE_DIR=$HOME/.cache/zplug
 
 source $ZPLUG_HOME/init.zsh
 
