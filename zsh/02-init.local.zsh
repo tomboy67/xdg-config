@@ -1,1 +1,1 @@
-[ -f ~/.zshrc.local ] && source ~/.zshrc.init.local
+[ -f ~/.zshrc.init.local ] && source ~/.zshrc.init.local
