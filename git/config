@@ -27,3 +27,6 @@
   generic = G move-last-line
   generic = ^F move-page-down
   generic = ^B move-page-up
+[user]
+  name = tomomura
+  email = r.tomomura@logic-sense.jp
