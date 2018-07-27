@@ -81,3 +81,4 @@ on_map = '<Plug>NERDCommenterToggle'
 [[plugins]]
 repo = 'mhartington/nvim-typescript'
 on_ft = 'typescript'
+hook_source = 'source ~/.config/nvim/rc/plugins_lazy/nvim-typescript.rc.vim'

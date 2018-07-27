@@ -1,1 +1,1 @@
-let g:nvim_typescript#server_path = '$XDG_CONFIG_HOME/yarn/global/node_modules/.bin/tsserver'
+let g:deoplete#enable_at_startup = 1
