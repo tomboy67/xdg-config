@@ -14,7 +14,7 @@ zplug "sindresorhus/pure"
 
 zplug "mafredri/zsh-async"
 
-zplug "zsh-users/zsh-syntax-highlighting", nice:10
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
