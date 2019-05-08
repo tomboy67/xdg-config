@@ -1,7 +1,7 @@
 #!/bin/bash
 
-[ -d $XDG_CACHE_HOME/zsh ] || mkdir $XDG_CACHE_HOME/zsh
-[ -d $XDG_CACHE_HOME/zplug ] || mkdir $XDG_CACHE_HOME/zplug
+[ -d $XDG_CACHE_HOME/zsh ] || mkdir -p $XDG_CACHE_HOME/zsh
+[ -d $XDG_CACHE_HOME/zplug ] || mkdir -p $XDG_CACHE_HOME/zplug
 
 ZSH_DOT_FILES=( zshrc zshenv )
 

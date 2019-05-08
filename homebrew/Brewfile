@@ -1,34 +1,32 @@
 cask_args appdir: '/Applications'
 
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
-tap 'tkengo/highway'
-tap 'neovim/neovim'
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 
-brew 'ghq'
-brew 'neovim'
-brew 'highway'
-brew 'reattach-to-user-namespace'
-brew 'rbenv'
-brew 'ruby-build'
-brew 'peco'
-brew 'pyenv'
-brew 'terminal-notifier'
-brew 'zplug'
 brew 'zsh'
+brew 'zplug'
+brew 'peco'
 brew 'tmux'
+brew 'neovim'
 brew 'tig'
+brew 'ghq'
+brew 'fontforge'
+brew 'python'
+brew 'python@2'
 
-cask 'chefdk'
-cask 'vagrant'
-cask 'docker'
-cask 'google-chrome'
-cask 'firefox'
-cask 'coteditor'
-cask 'atom'
-cask 'google-japanese-ime'
-cask 'appcleaner'
-cask 'iterm2'
-cask 'libreoffice'
 cask 'font-source-han-code-jp'
-cask 'font-sauce-code-powerline'
+cask "google-chrome"
+cask "google-japanese-ime"
+cask "microsoft-office"
+cask "kindle"
+cask "chatwork"
+cask "zoomus"
+cask "skype"
+cask "adobe-creative-cloud"
+cask "iterm2"
+cask "docker"
+cask "parallels"
+
+mas "1Password 7 - Password Manager", id: 1333542190
+mas "Slack", id: 803453959
+mas "CotEditor", id: 1024640650
