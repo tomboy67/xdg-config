@@ -1,32 +1,43 @@
 cask_args appdir: '/Applications'
 
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
+tap 'homebrew/cask'
+tap 'homebrew/cask-fonts'
 
 brew 'zsh'
 brew 'zplug'
-brew 'peco'
 brew 'tmux'
-brew 'neovim'
 brew 'tig'
 brew 'ghq'
-brew 'fontforge'
+brew 'neovim'
+brew 'gperftools'
+brew 'the_silver_searcher'
+brew 'peco'
+brew 'terminal-notifier'
 brew 'python'
 brew 'python@2'
+brew 'ruby'
 
 cask 'font-source-han-code-jp'
-cask "google-chrome"
-cask "google-japanese-ime"
-cask "microsoft-office"
-cask "kindle"
-cask "chatwork"
-cask "zoomus"
-cask "skype"
-cask "adobe-creative-cloud"
-cask "iterm2"
-cask "docker"
-cask "parallels"
+cask 'google-chrome'
+cask 'google-japanese-ime'
+cask 'microsoft-office'
+cask 'libreoffice'
+cask 'libreoffice-language-pack'
+cask 'chatwork'
+cask 'zoomus'
+cask 'adobe-acrobat-reader'
+cask 'appcleaner'
+cask 'iterm2'
+cask 'visual-studio-code'
+cask 'intellij-idea-ce'
+cask 'docker'
+cask 'sequel-pro'
+cask 'charles'
+cask 'pritunl'
+cask 'drawio'
 
-mas "1Password 7 - Password Manager", id: 1333542190
-mas "Slack", id: 803453959
-mas "CotEditor", id: 1024640650
+mas '1Password 7 - Password Manager', id: 1333542190
+mas 'Slack', id: 803453959
+mas 'CotEditor', id: 1024640650
+mas 'Cybozu Desktop', id: 905155357
+mas 'CopyClip', id: 595191960
