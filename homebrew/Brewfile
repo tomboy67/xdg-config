@@ -17,7 +17,8 @@ brew 'the_silver_searcher'
 brew 'peco'
 brew 'terminal-notifier'
 brew 'python'
-brew 'ruby'
+brew 'go'
+brew 'yarn'
 
 cask 'font-source-han-code-jp'
 cask 'google-chrome'
@@ -35,8 +36,10 @@ cask 'intellij-idea-ce'
 cask 'docker'
 cask 'sequel-pro'
 cask 'charles'
-# cask 'pritunl'
-# cask 'drawio'
+cask 'tunnelblick'
+cask 'sketch'
+cask 'abstract'
+cask 'parallels'
 
 mas '1Password 7 - Password Manager', id: 1333542190
 mas 'Slack', id: 803453959
