@@ -7,7 +7,6 @@ if has("autocmd")
   filetype plugin indent on
 
   autocmd BufNewFile,BufRead *.slim set filetype=slim
-  autocmd BufNewFile,BufRead *.tsx set filetype=typescript
 
   autocmd FileType css        setlocal sw=2 sts=2 ts=2 et
   autocmd FileType eruby      setlocal sw=2 sts=2 ts=2 et
