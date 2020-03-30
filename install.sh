@@ -10,13 +10,6 @@ do
     ln -sF $XDG_CONFIG_HOME/zsh/$file $HOME/.$file
 done
 
-TMUX_DOT_FILES=( tmux.conf )
-
-for file in ${TMUX_DOT_FILES[@]}
-do
-    ln -sF $XDG_CONFIG_HOME/tmux/$file $HOME/.$file
-done
-
 HOMEBREW_DOT_FILES=( Brewfile )
 
 for file in ${HOMEBREW_DOT_FILES[@]}
