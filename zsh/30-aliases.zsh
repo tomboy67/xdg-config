@@ -1,4 +1,5 @@
 alias vim=nvim
+alias tmux='tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf'
 
 case "${OSTYPE}" in
 freebsd*|darwin*)
