@@ -1,6 +1,6 @@
-# /Users/ryota/.config/tmuxinator/rails_docker.yml
+# /Users/ryota/.config/tmuxinator/docker_docker.yml
 
-name: rails_docker-<%= @args[2] %>
+name: yarn_docker-<%= @args[2] %>
 root: ~/ghq/<%= @args[0] %>/<%= @args[1] %>/<%= @args[2] %>
 
 # Optional tmux socket
@@ -47,6 +47,5 @@ windows:
       # synchronize: after
       panes:
         - vim
-        - docker-compose run --rm rails guard
-  - server: docker-compose run --rm rails bin/rails s -b 0.0.0.0
+        - docker-compose up
   - git: tig
