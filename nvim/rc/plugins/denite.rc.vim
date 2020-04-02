@@ -2,22 +2,36 @@ nnoremap [denite]    <Nop>
 nmap     ;u [denite]
 
 " カレントディレクトリ以下
-nnoremap <silent> [denite]a  :<C-u>Denite file_rec -highlight-mode-insert=Search<CR>
+nnoremap <silent> [denite]a  :<C-u>Denite file/rec<CR>
 " 最近開いたバッファー
-nnoremap <silent> [denite]r  :<C-u>Denite file_mru -highlight-mode-insert=Search<CR>
+" nnoremap <silent> [denite]r  :<C-u>Denite file_mru<CR>
 " バッファー
-nnoremap <silent> [denite]b  :<C-u>Denite buffer -highlight-mode-insert=Search<CR>
+nnoremap <silent> [denite]b  :<C-u>Denite buffer<CR>
 " Yank したもの
-nnoremap <silent> [denite]y  :<C-u>Denite neoyank -highlight-mode-insert=Search<CR>j
+" nnoremap <silent> [denite]y  :<C-u>Denite neoyank<CR>j
 " 検索
-nnoremap <silent> [denite]g  :<C-u>Denite grep -highlight-mode-insert=Search<CR>
+nnoremap <silent> [denite]g  :<C-u>Denite grep<CR>
 " カーソル下の単語から検索
-nnoremap <silent> [denite]]  :<C-u>DeniteCursorWord grep -highlight-mode-insert=Search<CR>
+nnoremap <silent> [denite]]  :<C-u>DeniteCursorWord grep<CR>
 
-" nnoremap <silent> [unite]rm  :<C-u>Unite -no-split rails/model<CR>
-" nnoremap <silent> [unite]rc  :<C-u>Unite -no-split rails/controller<CR>
-" nnoremap <silent> [unite]rv  :<C-u>Unite -no-split rails/view<CR>
-" nnoremap <silent> [unite]rh  :<C-u>Unite -no-split rails/helper<CR>
-" nnoremap <silent> [unite]rd  :<C-u>Unite -no-split rails/db<CR>
-" nnoremap <silent> [unite]rj  :<C-u>Unite -no-split rails/javascript<CR>
-" nnoremap <silent> [unite]rs  :<C-u>Unite -no-split rails/stylesheet<CR>
+" Define mappings
+autocmd FileType denite call s:denite_my_settings()
+function! s:denite_my_settings() abort
+  nnoremap <silent><buffer><expr> <CR>
+  \ denite#do_map('do_action')
+  nnoremap <silent><buffer><expr> d
+  \ denite#do_map('do_action', 'delete')
+  nnoremap <silent><buffer><expr> p
+  \ denite#do_map('do_action', 'preview')
+  nnoremap <silent><buffer><expr> q
+  \ denite#do_map('quit')
+  nnoremap <silent><buffer><expr> i
+  \ denite#do_map('open_filter_buffer')
+  nnoremap <silent><buffer><expr> <Space>
+  \ denite#do_map('toggle_select').'j'
+endfunction
+
+autocmd FileType denite-filter call s:denite_filter_my_settings()
+function! s:denite_filter_my_settings() abort
+  imap <silent><buffer> <C-o> <Plug>(denite_filter_quit)
+endfunction
