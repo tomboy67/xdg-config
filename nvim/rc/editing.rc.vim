@@ -1,3 +1,4 @@
+set number
 set expandtab
 
 set list

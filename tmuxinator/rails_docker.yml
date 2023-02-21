@@ -46,7 +46,7 @@ windows:
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - vim
-        - docker-compose run --rm rails guard
-  - server: docker-compose run --rm rails bin/rails s -b 0.0.0.0
-  - git: tig
+        - docker-compose up -d solargraph
+        - docker-compose up web
+        - docker-compose run --rm web guard
+        - docker-compose run --rm web bin/rails c

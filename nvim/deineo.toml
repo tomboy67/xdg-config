@@ -1,0 +1,12 @@
+[[plugins]]
+repo = 'numToStr/Comment.nvim'
+hook_add = '''
+lua << EOF
+  require('Comment').setup({
+    toggler = {
+        line = '<leader>c<space>',
+        block = '<leader>b<space>',
+    },
+  })
+EOF
+'''

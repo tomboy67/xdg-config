@@ -7,6 +7,10 @@ build = 'make'
 
 [[plugins]]
 repo = 'cocopon/iceberg.vim'
+hook_add = '''
+  syntax on
+  colorscheme iceberg
+'''
 
 [[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
@@ -21,13 +25,23 @@ repo = 'vim-airline/vim-airline'
 repo = 'vim-airline/vim-airline-themes.git'
 
 [[plugins]]
+repo = 'dense-analysis/ale'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
 repo = 'nathanaelkane/vim-indent-guides'
 
 [[plugins]]
-repo = 'Shougo/deoplete.nvim'
+repo = 'neoclide/coc.nvim'
+rev = 'release'
+merged = 0
 
-[[plugins]]
-repo = 'tpope/vim-fugitive'
+# [[plugins]]
+# repo = 'leafgarland/typescript-vim'
+# on_ft = ['typescript', 'typescriptreact']
 
-[[plugins]]
-repo = 'w0rp/ale'
+ #[[plugins]]
+# repo = 'maxmellon/vim-jsx-pretty'
+# on_ft = ['javascriptreact', 'typescriptreact']

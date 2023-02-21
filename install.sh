@@ -16,3 +16,6 @@ for file in ${HOMEBREW_DOT_FILES[@]}
 do
     ln -sF $XDG_CONFIG_HOME/homebrew/$file $HOME/.$file
 done
+
+mkdir -p $HOME/.rbenv
+ln -sF $XDG_CONFIG_HOME/rbenv/default-gems $HOME/.rbenv/default-gems

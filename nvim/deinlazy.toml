@@ -4,81 +4,20 @@ depends = ['neomru.vim']
 hook_source = 'source ~/.config/nvim/rc/plugins_lazy/denite.rc.vim'
 
 [[plugins]]
-repo = 'Shougo/neoyank.vim'
-on_event = 'TextYankPost'
-on_source = 'denite.vim'
-
-[[plugins]]
 repo = 'Shougo/neomru.vim'
 
 [[plugins]]
-repo = 'airblade/vim-gitgutter'
-on_event = ['BufRead']
-
-[[plugins]]
-repo = 'mattn/emmet-vim'
-on_ft = ['html', 'javascript']
-
-[[plugins]]
-repo = 'cespare/vim-toml'
-on_ft = 'toml'
-
-[[plugins]]
-repo = 'elzr/vim-json'
-on_ft = 'json'
-
-[[plugins]]
-repo = 'rcmdnk/vim-markdown'
-on_ft = ['markdown', 'mkd']
-
-[[plugins]]
-repo = 'vim-ruby/vim-ruby'
-on_ft = 'ruby'
-
-[[plugins]]
-repo = 'tpope/vim-rails'
-on_ft = 'ruby'
-
-[[plugins]]
-repo = 'kchmck/vim-coffee-script'
-on_ft = 'coffee'
-
-[[plugins]]
-repo = 'HerringtonDarkholme/yats.vim'
-on_ft = 'typescript'
-
-[[plugins]]
-repo = 'slim-template/vim-slim'
-on_ft = 'slim'
-
-[[plugins]]
-repo = 'jelera/vim-javascript-syntax'
-on_ft = 'javascript'
-
-[[plugins]]
-repo = 'MaxMEllon/vim-jsx-pretty'
-on_ft = ['javascript', 'typescript']
-
-[[plugins]]
-repo = 'Shougo/neco-vim'
-on_ft = 'vim'
-
-[[plugins]]
-repo = 'Shougo/neco-syntax'
-on_source = ['neocomplete.vim', 'deoplete.nvim']
-
-[[plugins]]
-repo = 'thinca/vim-quickrun'
-on_map = '<Plug>'
-
-[[plugins]]
 repo = 'scrooloose/nerdtree'
+hook_add = '''
+  map <C-n> :NERDTreeToggle<CR>
+'''
 
 [[plugins]]
-repo = 'scrooloose/nerdcommenter'
-on_map = '<Plug>NERDCommenterToggle'
-
-[[plugins]]
-repo = 'mhartington/nvim-typescript'
-on_ft = 'typescript'
-hook_source = 'source ~/.config/nvim/rc/plugins_lazy/nvim-typescript.rc.vim'
+repo = 'tpope/vim-fugitive.git'
+on_cmd = 'Git'
+hook_add = '''
+  let g:airline#extensions#branch#enabled = 1
+  nnoremap [fugitive]  <Nop>
+  nmap <leader>g [fugitive]
+  nnoremap <silent> [fugitive]s :Git<CR>
+'''
