@@ -1,7 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/cask'
-tap 'homebrew/cask-fonts'
+tap 'iandol/adobe-fonts'
 tap 'sanemat/font'
 
 brew 'ricty', args: ['with-powerline']
@@ -29,11 +29,9 @@ cask 'font-source-han-code-jp'
 cask 'google-chrome'
 cask 'google-drive'
 cask 'google-japanese-ime'
-cask 'microsoft-office'
 cask 'microsoft-teams'
 cask 'zoom'
 cask 'kindle'
-cask 'adobe-acrobat-reader'
 cask 'appcleaner'
 cask 'iterm2'
 cask 'visual-studio-code'
@@ -43,10 +41,13 @@ cask 'sequel-pro'
 cask 'charles'
 cask 'sketch'
 cask 'abstract'
-cask 'parallels'
+# cask 'parallels'
 cask 'stoplight-studio'
 
 mas 'Bitwarden', id: 1352778147
-mas 'Slack', id: 803453959
+mas 'Slack for Desktop', id: 803453959
+mas 'Microsoft Word', id: 462054704
+mas 'Microsoft Excel', id: 462058435
+mas 'Microsoft PowerPoint', id: 462062816
 mas 'CotEditor', id: 1024640650
 mas 'The Unarchiver', id: 425424353

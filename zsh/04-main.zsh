@@ -14,6 +14,8 @@ export EDITOR=vim
 export PATH=$PATH:/sbin:/usr/local/bin
 export PATH=$PATH:$HOME/.local/bin
 
+eval "$(anyenv init -)"
+
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 export PATH="$HOME/.rbenv/bin:$PATH"
