@@ -1,7 +1,9 @@
 cask_args appdir: '/Applications'
 
+tap "homebrew/bundle"
 tap 'homebrew/cask'
 tap 'iandol/adobe-fonts'
+tap "rbenv/tap"
 tap 'sanemat/font'
 
 brew 'ricty', args: ['with-powerline']
@@ -25,23 +27,20 @@ brew 'go'
 brew 'yarn'
 brew 'nodebrew'
 
+brew 'mas'
+
 cask 'font-source-han-code-jp'
 cask 'google-chrome'
 cask 'google-drive'
 cask 'google-japanese-ime'
+cask "microsoft-auto-update"
 cask 'microsoft-teams'
 cask 'zoom'
 cask 'kindle'
 cask 'appcleaner'
 cask 'iterm2'
 cask 'visual-studio-code'
-cask 'intellij-idea-ce'
-cask 'docker'
-cask 'sequel-pro'
 cask 'charles'
-cask 'sketch'
-cask 'abstract'
-# cask 'parallels'
 cask 'stoplight-studio'
 
 mas 'Bitwarden', id: 1352778147
@@ -51,3 +50,9 @@ mas 'Microsoft Excel', id: 462058435
 mas 'Microsoft PowerPoint', id: 462062816
 mas 'CotEditor', id: 1024640650
 mas 'The Unarchiver', id: 425424353
+
+vscode "google.geminicodeassist"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode.remote-explorer"
